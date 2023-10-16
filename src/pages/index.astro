@@ -1,4 +1,5 @@
 ---
+import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
 ---
 
@@ -9,12 +10,14 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
+    <Navbar />
+
     <h1 id="page-title">Haxiom</h1>
 
     <style>
       #page-title {
         font-family: "Nunito";
-        font-size: 3em;
+        font-size: 20vw;
         font-weight: 300;
         background-image: linear-gradient(
           45deg,
