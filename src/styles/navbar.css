@@ -1,6 +1,6 @@
 .navbar-container {
     width: 100%;
-    height: max(10vh, 3rem);
+    height: clamp(3rem, 10vh, 70px);
 
     position: fixed;
     top: 15px;
@@ -25,7 +25,7 @@ nav {
 
     column-gap: 2rem;
 
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
 
 nav a {
@@ -34,5 +34,7 @@ nav a {
 }
 
 nav> :first-child {
+    font-size: 2em;
+    font-weight: 700;
     margin-right: auto;
 }

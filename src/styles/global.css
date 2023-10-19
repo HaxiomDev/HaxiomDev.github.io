@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:wght@500&family=Roboto+Slab&display=swap');
+@import url('./animations.css');
 
 :root {
     --black-1: 15, 17, 8;
