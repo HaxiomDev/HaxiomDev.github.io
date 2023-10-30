@@ -14,11 +14,40 @@ import "../styles/global.css";
     <Navbar />
 
     <h1 id="page-title">Haxiom</h1>
+    <h2 id = "description">Innovation. Collaboration. Learning.</h2>
+    <div style="text-align: center;">
+      <a href="https://bit.ly/haxiominterestform" class="button">Join Now</a>
+    </div>
+
+    <h1 id = "Hackathons">Compete in FREE Hackathons</h1>
+
 
     <style>
+      #Hackathons {
+        font-family: "Nunito";
+        font-size: 3vw;
+        font-weight: 300;
+        color: rgb(0,200,255);
+        position: absolute;
+        top: 95%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 5px rgb(0, 200, 255)  
+       }
+      #description {
+        font-family: "Nunito";
+        font-size: 2vw;
+        font-weight: 300;
+        color: rgb(var(--text-primary));
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 5px rgb(160, 160, 160)  
+       }
       #page-title {
         font-family: "Nunito";
-        font-size: 20vw;
+        font-size: 10vw;
         font-weight: 300;
         background-image: linear-gradient(
           45deg,
@@ -42,7 +71,41 @@ import "../styles/global.css";
         letter-spacing: 10px;
 
         text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
+      
+      .button {
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(var(--text-primary));
+
+  color: rgb(var(--text-secondary));
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  box-shadow: 0 0 15px 0 rgb(14, 162, 230);
+
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: all .3s ease;
+  transition: background-color .5s ease;
+}
+
+.button:hover {
+  box-shadow: 0 0 20px 0 rgb(14, 162, 230);
+  background-color: rgb(162, 159, 159);
+  color: black;
+}
     </style>
   </body>
 </html>

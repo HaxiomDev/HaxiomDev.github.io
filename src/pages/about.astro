@@ -1,10 +1,18 @@
 ---
-
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
 ---
 
-<body>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <base href="/HaxiomSite" />
+  </head>
+  <body>
+    <Navbar />
 
-  <h1>I LIKE ABOUT ME PAGES</h1>
+<body>
+  
 </body>

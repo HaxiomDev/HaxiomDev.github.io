@@ -38,3 +38,13 @@ nav> :first-child {
     font-weight: 700;
     margin-right: auto;
 }
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--blue-active));
+    text-underline-offset: 0.25em; 
+    text-decoration-thickness: 3px;
+}
+
+
+
