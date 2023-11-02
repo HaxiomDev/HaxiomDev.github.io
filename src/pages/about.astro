@@ -8,9 +8,58 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <base href="/HaxiomSite" />
+    <link rel="icon" href="/favicon.png" />
+
+    <title>About Us</title>
   </head>
   <body>
     <Navbar />
+
+    <main>
+      <div class="title">
+        <h1>About Us.</h1>
+        <h2>By coders, for coders.</h2>
+      </div>
+
+      <p class="scroll" class="description">
+        Haxiom was created by programmers, to provide an environment where
+        aspiring coders can flourish while also leaving a positive imprint on
+        our community. With a mission to develop the logic, design, and
+        application development skills of children, teenagers, and adults alike.
+        The dedicated team of Haxiom started this group with one major goal in
+        mind: developing the technological future of tomorrow.
+      </p>
+    </main>
+
+    <style>
+      main {
+        min-height: 200vh;
+        align-items: center;
+        justify-content: start;
+      }
+
+      h1 {
+        font-size: min(15.5vw, 10rem);
+
+        margin: -3vh 0px;
+        padding: 0;
+      }
+
+      h2 {
+        font-size: min(3vw, 1.6rem);
+      }
+
+      .title {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .description {
+        max-width: 50pc;
+        font-size: 1.35em;
+      }
+    </style>
   </body>
 </html>

@@ -8,6 +8,10 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" href="/favicon.png" />
+
+    <title>Haxiom</title>
   </head>
   <body>
     <Navbar />
@@ -17,27 +21,7 @@ import "../styles/global.css";
     </main>
 
     <style>
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        height: 100vh;
-        width: fit-content;
-
-        margin: 0 auto;
-        margin-top: clamp(40px, 10vw, 50px);
-      }
-
       #page-title {
-        font-family: "Nunito";
-        font-size: min(17.5vw, 15rem);
-        font-weight: 300;
-
-        margin: 0;
-        padding: 0;
-
         background-image: linear-gradient(
           45deg,
           rgb(var(--blue-1)),
