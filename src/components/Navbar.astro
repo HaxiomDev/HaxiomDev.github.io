@@ -8,3 +8,13 @@ import "../styles/navbar.css";
     <a class="hover-underline-animation" href="/about">About</a>
   </nav>
 </div>
+
+<script>
+  let urlSuffix = window.location.pathname;
+
+  for (const link of document.querySelectorAll("nav a")) {
+    if (link.getAttribute("href") === urlSuffix) {
+      link.classList.add("active");
+    }
+  }
+</script>
