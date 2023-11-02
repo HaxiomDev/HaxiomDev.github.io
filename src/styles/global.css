@@ -7,11 +7,11 @@
 
     --white: 245, 245, 245;
 
-    --blue-active: 93, 121, 181;
-    --blue-hover: 99, 167, 166;
+    --blue-1: 93, 121, 181;
+    --blue-2: 99, 167, 166;
 
-    --green-active: 138, 207, 135;
-    --orange-active: 255, 145, 0;
+    --green-1: 138, 207, 135;
+    --orange-1: 255, 145, 0;
 
     --red-active: 208, 0, 0;
 }
@@ -31,5 +31,4 @@ body {
     background: rgb(var(--black-1));
     color: rgb(var(--white));
 
-    min-height: 200vh;
 }

@@ -12,19 +12,43 @@ import "../styles/global.css";
   <body>
     <Navbar />
 
-    <h1 id="page-title">Haxiom</h1>
+    <main>
+      <h1 id="page-title">Haxiom</h1>
+      <!-- <h3 id="sub-title">
+        <span>Collaboration</span>
+        <span>Innovation</span>
+        <span>Learning</span>
+      </h3> -->
+    </main>
 
     <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 100vh;
+        width: fit-content;
+
+        margin: 0 auto;
+        margin-top: clamp(40px, 10vw, 50px);
+      }
+
       #page-title {
         font-family: "Nunito";
-        font-size: 20vw;
+        font-size: 17.5vw;
         font-weight: 300;
+
+        margin: 0;
+        padding: 0;
+
         background-image: linear-gradient(
           45deg,
-          rgb(93, 121, 181),
-          rgb(99, 167, 166),
-          rgb(138, 207, 135),
-          rgb(255, 145, 0)
+          rgb(var(--blue-1)),
+          rgb(var(--blue-2)),
+          rgb(var(--green-1)),
+          rgb(var(--orange-1))
         );
         filter: drop-shadow(5px 5px 3vw #28d8ff42);
 
@@ -39,8 +63,29 @@ import "../styles/global.css";
 
         text-transform: uppercase;
         letter-spacing: 10px;
+      }
 
-        text-align: center;
+      #sub-title {
+        font-family: "Nunito";
+        font-size: 2vw;
+        font-weight: 300;
+        background-image: linear-gradient(
+          45deg,
+          rgb(var(--blue-1)),
+          rgb(var(--blue-2)),
+          rgb(var(--green-1)),
+          rgb(var(--orange-1))
+        );
+        filter: drop-shadow(5px 5px 3vw #28d8ff42);
+
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+        background-clip: text;
+        box-decoration-break: clone;
+
+        -webkit-background-clip: text;
+        -webkit-box-decoration-break: clone;
       }
     </style>
   </body>

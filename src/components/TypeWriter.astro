@@ -1,0 +1,37 @@
+---
+const { words, speed } = Astro.props;
+
+console.log(words);
+---
+
+<div class="type-writer" data-words={words}></div>
+
+<script>
+  const typeWriter = document.querySelector(".type-writer");
+  let words = typeWriter.dataset.words.split(",");
+
+  console.log(words);
+
+  let i = 0;
+  let goingForward = true;
+  let currentWord = words[i];
+  let currentWordIndex = 0;
+
+  let timer = setInterval(() => {
+    typeWriter.innerHTML = currentWord.substring(0, currentWordIndex);
+
+    if (goingForward) {
+      currentWordIndex++;
+    } else {
+      currentWordIndex--;
+    }
+
+    if (currentWordIndex === currentWord.length) {
+      goingForward = false;
+    } else if (currentWordIndex === 0) {
+      goingForward = true;
+      i++;
+      currentWord = words[i % words.length];
+    }
+  }, 300);
+</script>
